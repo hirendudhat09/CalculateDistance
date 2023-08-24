@@ -2,14 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {
   View,
   Text,
-  Button,
   PermissionsAndroid,
   StyleSheet,
   TouchableOpacity,
   Alert,
 } from 'react-native';
 import WiFiManager from 'react-native-wifi-reborn';
-import {SelectList} from 'react-native-dropdown-select-list';
 import {Dropdown} from 'react-native-element-dropdown';
 
 const WiFiDistanceCalculator = () => {
@@ -109,7 +107,6 @@ const WiFiDistanceCalculator = () => {
 
   return (
     <View>
-      {/* <Button title="Refresh" onPress={refreshSignalStrength} /> */}
 
       <View style={{marginTop: 20}}>
         <View
@@ -125,7 +122,6 @@ const WiFiDistanceCalculator = () => {
         {data.length !== 0 && (
           <View
             style={{
-              // marginVertical: 20,
               marginHorizontal: 20,
               flexDirection: 'row',
               justifyContent: 'space-between',
@@ -228,7 +224,6 @@ const styles = StyleSheet.create({
   },
   updateButton: {
     backgroundColor: 'blue',
-    // marginTop: 20,
     paddingVertical: 10,
     borderRadius: 8,
     paddingHorizontal: 20,
